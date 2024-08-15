@@ -3,8 +3,7 @@
 Mini projeto em Java para sistemas desktop (Windows, Linux ou MAC) que  busca automaticamente o CEP de um Web Service podendo ser usado em uma aplicação comercial para otimizar o preenchimento de cadastro de clientes, fornecedores etc.
 
 ![cep](https://github.com/professorjosedeassis/cep/blob/main/buscarCEP/src/img/buscarcep.png)
-### Autor
-Professor José de Assis
+
 ## Instruções para instalação e uso do aplicativo
 ### Pré requisitos
 1) Ter o Java **versão 17** ou superior instalado, no exemplo usei a versão openJDK 21 LTS que pode ser obtida no link indicado. Na instalação selecione todos os recursos conforme indicado na imagem.
