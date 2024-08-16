@@ -10,6 +10,9 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
+import java.awt.SystemColor;
+import java.awt.Cursor;
+import javax.swing.ImageIcon;
 
 public class Cep extends JFrame {
 
@@ -56,16 +59,16 @@ public class Cep extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		textField = new JTextField();
-		textField.setBounds(60, 22, 97, 20);
+		textField.setBounds(60, 22, 125, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel_1 = new JLabel("Endereço");
-		lblNewLabel_1.setBounds(10, 58, 46, 14);
+		lblNewLabel_1.setBounds(10, 58, 60, 14);
 		contentPane.add(lblNewLabel_1);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(70, 55, 206, 20);
+		textField_1.setBounds(95, 53, 240, 20);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
 		
@@ -74,7 +77,7 @@ public class Cep extends JFrame {
 		contentPane.add(lblNewLabel_2);
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(60, 91, 216, 20);
+		textField_2.setBounds(60, 91, 275, 20);
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
@@ -88,11 +91,11 @@ public class Cep extends JFrame {
 		textField_3.setColumns(10);
 		
 		JLabel lblNewLabel_4 = new JLabel("UF");
-		lblNewLabel_4.setBounds(195, 134, 24, 14);
+		lblNewLabel_4.setBounds(227, 134, 24, 14);
 		contentPane.add(lblNewLabel_4);
 		
 		JComboBox comboBox = new JComboBox();
-		comboBox.setBounds(216, 130, 60, 22);
+		comboBox.setBounds(275, 130, 60, 22);
 		contentPane.add(comboBox);
 		
 		JButton btnNewButton = new JButton("Limpar");
@@ -100,7 +103,16 @@ public class Cep extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Buscar");
-		btnNewButton_1.setBounds(187, 21, 89, 23);
+		btnNewButton_1.setBounds(208, 21, 89, 23);
 		contentPane.add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("");
+		btnNewButton_2.setToolTipText("Sobre");
+		btnNewButton_2.setIcon(new ImageIcon(Cep.class.getResource("/img/about.png")));
+		btnNewButton_2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		btnNewButton_2.setBorder(null);
+		btnNewButton_2.setBackground(SystemColor.control);
+		btnNewButton_2.setBounds(335, 11, 48, 48);
+		contentPane.add(btnNewButton_2);
 	}
 }
