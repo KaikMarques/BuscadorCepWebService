@@ -91,7 +91,7 @@ public class Cep extends JFrame {
 		textField_3.setColumns(10);
 		
 		JLabel lblNewLabel_4 = new JLabel("UF");
-		lblNewLabel_4.setBounds(227, 134, 24, 14);
+		lblNewLabel_4.setBounds(228, 134, 24, 14);
 		contentPane.add(lblNewLabel_4);
 		
 		JComboBox comboBox = new JComboBox();
@@ -99,7 +99,7 @@ public class Cep extends JFrame {
 		contentPane.add(comboBox);
 		
 		JButton btnNewButton = new JButton("Limpar");
-		btnNewButton.setBounds(0, 196, 89, 23);
+		btnNewButton.setBounds(10, 213, 89, 23);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Buscar");
@@ -112,7 +112,7 @@ public class Cep extends JFrame {
 		btnNewButton_2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnNewButton_2.setBorder(null);
 		btnNewButton_2.setBackground(SystemColor.control);
-		btnNewButton_2.setBounds(335, 11, 48, 48);
+		btnNewButton_2.setBounds(375, 201, 49, 49);
 		contentPane.add(btnNewButton_2);
 	}
 }
