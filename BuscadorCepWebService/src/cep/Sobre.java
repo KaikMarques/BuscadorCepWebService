@@ -1,13 +1,16 @@
 package cep;
 
+import java.awt.Cursor;
+import java.awt.Desktop;
 import java.awt.EventQueue;
-
-import javax.swing.JDialog;
-import java.awt.Toolkit;
-import javax.swing.JLabel;
 import java.awt.SystemColor;
-import javax.swing.JButton;
+import java.awt.Toolkit;
+import java.net.URI;
+
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
 
 public class Sobre extends JDialog {
 
@@ -53,17 +56,30 @@ public class Sobre extends JDialog {
 		lblNewLabel_2.setBounds(27, 135, 90, 14);
 		getContentPane().add(lblNewLabel_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("republicavirtual.com.br");
-		lblNewLabel_3.setForeground(SystemColor.textHighlight);
-		lblNewLabel_3.setBounds(113, 135, 151, 14);
-		getContentPane().add(lblNewLabel_3);
+		JLabel lblWebService = new JLabel("republicavirtual.com.br");
+		lblWebService.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		lblWebService.setForeground(SystemColor.textHighlight);
+		lblWebService.setBounds(113, 135, 151, 14);
+		getContentPane().add(lblWebService);
 		
-		JButton btnNewButton = new JButton("");
-		btnNewButton.setToolTipText("https://github.com/KaikMarques");
-		btnNewButton.setIcon(new ImageIcon(Sobre.class.getResource("/img/github.png")));
-		btnNewButton.setBounds(26, 185, 45, 41);
-		getContentPane().add(btnNewButton);
+		JButton btbGithub = new JButton("");
+		btbGithub.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		btbGithub.setToolTipText("https://github.com/KaikMarques");
+		btbGithub.setIcon(new ImageIcon(Sobre.class.getResource("/img/github.png")));
+		btbGithub.setBounds(26, 185, 45, 41);
+		getContentPane().add(btbGithub);
 
+	}// fim do construtor/
+	
+	private void link(String site) {
+		// criei um objeto desktop tendo como modelo a classe Desktop
+		Desktop desktop = Desktop.getDesktop();
+		try {
+			URI uri = new URI(site);
+			desktop.browse(uri);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
 	}
 
 }
